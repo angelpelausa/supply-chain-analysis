@@ -1,0 +1,2578 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.24.1010.1014                               -->
+<workbook original-version='18.1' source-build='2024.3.0 (20243.24.1010.1014)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <MapboxVectorStylesAndLayers />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='supply_chain_analysis_cleaned' inline='true' name='federated.0x9or710sebycz125bpjl1acafwd' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='supply_chain_analysis_cleaned' name='textscan.0qg4h5e18gz4ui12p69cv1ac9tdg'>
+            <connection class='textscan' directory='C:/Users/USER/Desktop/Data Analyst/Project 3 - Python + Tableau' filename='supply_chain_analysis_cleaned.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0qg4h5e18gz4ui12p69cv1ac9tdg' name='supply_chain_analysis_cleaned.csv' table='[supply_chain_analysis_cleaned#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_PH' separator=','>
+            <column datatype='integer' name='days_for_shipping_real' ordinal='0' />
+            <column datatype='integer' name='days_for_shipment_scheduled' ordinal='1' />
+            <column datatype='real' name='benefit_per_order' ordinal='2' />
+            <column datatype='real' name='sales_per_customer' ordinal='3' />
+            <column datatype='string' name='delivery_status' ordinal='4' />
+            <column datatype='integer' name='late_delivery_risk' ordinal='5' />
+            <column datatype='string' name='category_name' ordinal='6' />
+            <column datatype='string' name='customer_country' ordinal='7' />
+            <column datatype='integer' name='customer_id' ordinal='8' />
+            <column datatype='string' name='customer_segment' ordinal='9' />
+            <column datatype='string' name='customer_state' ordinal='10' />
+            <column datatype='string' name='department_name' ordinal='11' />
+            <column datatype='real' name='latitude' ordinal='12' />
+            <column datatype='real' name='longitude' ordinal='13' />
+            <column datatype='string' name='market' ordinal='14' />
+            <column datatype='string' name='order_country' ordinal='15' />
+            <column datatype='datetime' name='order_date_dateorders' ordinal='16' />
+            <column datatype='integer' name='order_id' ordinal='17' />
+            <column datatype='real' name='order_item_discount' ordinal='18' />
+            <column datatype='integer' name='order_item_quantity' ordinal='19' />
+            <column datatype='real' name='sales' ordinal='20' />
+            <column datatype='real' name='order_item_total' ordinal='21' />
+            <column datatype='string' name='order_status' ordinal='22' />
+            <column datatype='string' name='product_name' ordinal='23' />
+            <column datatype='real' name='product_price' ordinal='24' />
+            <column datatype='datetime' name='shipping_date_dateorders' ordinal='25' />
+            <column datatype='string' name='shipping_mode' ordinal='26' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[supply_chain_analysis_cleaned.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₱&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_PH&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>days_for_shipping_real</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[days_for_shipping_real]</local-name>
+            <parent-name>[supply_chain_analysis_cleaned.csv]</parent-name>
+            <remote-alias>days_for_shipping_real</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[supply_chain_analysis_cleaned.csv_D5C6E75F089C47C7A9D5D3B500314C12]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>days_for_shipment_scheduled</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[days_for_shipment_scheduled]</local-name>
+            <parent-name>[supply_chain_analysis_cleaned.csv]</parent-name>
+            <remote-alias>days_for_shipment_scheduled</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[supply_chain_analysis_cleaned.csv_D5C6E75F089C47C7A9D5D3B500314C12]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>benefit_per_order</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[benefit_per_order]</local-name>
+            <parent-name>[supply_chain_analysis_cleaned.csv]</parent-name>
+            <remote-alias>benefit_per_order</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[supply_chain_analysis_cleaned.csv_D5C6E75F089C47C7A9D5D3B500314C12]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sales_per_customer</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[sales_per_customer]</local-name>
+            <parent-name>[supply_chain_analysis_cleaned.csv]</parent-name>
+            <remote-alias>sales_per_customer</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[supply_chain_analysis_cleaned.csv_D5C6E75F089C47C7A9D5D3B500314C12]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>delivery_status</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[delivery_status]</local-name>
+            <parent-name>[supply_chain_analysis_cleaned.csv]</parent-name>
+            <remote-alias>delivery_status</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[supply_chain_analysis_cleaned.csv_D5C6E75F089C47C7A9D5D3B500314C12]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>late_delivery_risk</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[late_delivery_risk]</local-name>
+            <parent-name>[supply_chain_analysis_cleaned.csv]</parent-name>
+            <remote-alias>late_delivery_risk</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[supply_chain_analysis_cleaned.csv_D5C6E75F089C47C7A9D5D3B500314C12]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>category_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[category_name]</local-name>
+            <parent-name>[supply_chain_analysis_cleaned.csv]</parent-name>
+            <remote-alias>category_name</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[supply_chain_analysis_cleaned.csv_D5C6E75F089C47C7A9D5D3B500314C12]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>customer_country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[customer_country]</local-name>
+            <parent-name>[supply_chain_analysis_cleaned.csv]</parent-name>
+            <remote-alias>customer_country</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[supply_chain_analysis_cleaned.csv_D5C6E75F089C47C7A9D5D3B500314C12]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>customer_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[customer_id]</local-name>
+            <parent-name>[supply_chain_analysis_cleaned.csv]</parent-name>
+            <remote-alias>customer_id</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[supply_chain_analysis_cleaned.csv_D5C6E75F089C47C7A9D5D3B500314C12]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>customer_segment</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[customer_segment]</local-name>
+            <parent-name>[supply_chain_analysis_cleaned.csv]</parent-name>
+            <remote-alias>customer_segment</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[supply_chain_analysis_cleaned.csv_D5C6E75F089C47C7A9D5D3B500314C12]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>customer_state</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[customer_state]</local-name>
+            <parent-name>[supply_chain_analysis_cleaned.csv]</parent-name>
+            <remote-alias>customer_state</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[supply_chain_analysis_cleaned.csv_D5C6E75F089C47C7A9D5D3B500314C12]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>department_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[department_name]</local-name>
+            <parent-name>[supply_chain_analysis_cleaned.csv]</parent-name>
+            <remote-alias>department_name</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[supply_chain_analysis_cleaned.csv_D5C6E75F089C47C7A9D5D3B500314C12]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>latitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[latitude]</local-name>
+            <parent-name>[supply_chain_analysis_cleaned.csv]</parent-name>
+            <remote-alias>latitude</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[supply_chain_analysis_cleaned.csv_D5C6E75F089C47C7A9D5D3B500314C12]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>longitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[longitude]</local-name>
+            <parent-name>[supply_chain_analysis_cleaned.csv]</parent-name>
+            <remote-alias>longitude</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[supply_chain_analysis_cleaned.csv_D5C6E75F089C47C7A9D5D3B500314C12]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>market</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[market]</local-name>
+            <parent-name>[supply_chain_analysis_cleaned.csv]</parent-name>
+            <remote-alias>market</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[supply_chain_analysis_cleaned.csv_D5C6E75F089C47C7A9D5D3B500314C12]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>order_country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[order_country]</local-name>
+            <parent-name>[supply_chain_analysis_cleaned.csv]</parent-name>
+            <remote-alias>order_country</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[supply_chain_analysis_cleaned.csv_D5C6E75F089C47C7A9D5D3B500314C12]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>order_date_dateorders</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[order_date_dateorders]</local-name>
+            <parent-name>[supply_chain_analysis_cleaned.csv]</parent-name>
+            <remote-alias>order_date_dateorders</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[supply_chain_analysis_cleaned.csv_D5C6E75F089C47C7A9D5D3B500314C12]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>order_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[order_id]</local-name>
+            <parent-name>[supply_chain_analysis_cleaned.csv]</parent-name>
+            <remote-alias>order_id</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[supply_chain_analysis_cleaned.csv_D5C6E75F089C47C7A9D5D3B500314C12]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>order_item_discount</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[order_item_discount]</local-name>
+            <parent-name>[supply_chain_analysis_cleaned.csv]</parent-name>
+            <remote-alias>order_item_discount</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[supply_chain_analysis_cleaned.csv_D5C6E75F089C47C7A9D5D3B500314C12]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>order_item_quantity</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[order_item_quantity]</local-name>
+            <parent-name>[supply_chain_analysis_cleaned.csv]</parent-name>
+            <remote-alias>order_item_quantity</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[supply_chain_analysis_cleaned.csv_D5C6E75F089C47C7A9D5D3B500314C12]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sales</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[sales]</local-name>
+            <parent-name>[supply_chain_analysis_cleaned.csv]</parent-name>
+            <remote-alias>sales</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[supply_chain_analysis_cleaned.csv_D5C6E75F089C47C7A9D5D3B500314C12]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>order_item_total</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[order_item_total]</local-name>
+            <parent-name>[supply_chain_analysis_cleaned.csv]</parent-name>
+            <remote-alias>order_item_total</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[supply_chain_analysis_cleaned.csv_D5C6E75F089C47C7A9D5D3B500314C12]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>order_status</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[order_status]</local-name>
+            <parent-name>[supply_chain_analysis_cleaned.csv]</parent-name>
+            <remote-alias>order_status</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[supply_chain_analysis_cleaned.csv_D5C6E75F089C47C7A9D5D3B500314C12]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>product_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[product_name]</local-name>
+            <parent-name>[supply_chain_analysis_cleaned.csv]</parent-name>
+            <remote-alias>product_name</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[supply_chain_analysis_cleaned.csv_D5C6E75F089C47C7A9D5D3B500314C12]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>product_price</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[product_price]</local-name>
+            <parent-name>[supply_chain_analysis_cleaned.csv]</parent-name>
+            <remote-alias>product_price</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[supply_chain_analysis_cleaned.csv_D5C6E75F089C47C7A9D5D3B500314C12]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>shipping_date_dateorders</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[shipping_date_dateorders]</local-name>
+            <parent-name>[supply_chain_analysis_cleaned.csv]</parent-name>
+            <remote-alias>shipping_date_dateorders</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[supply_chain_analysis_cleaned.csv_D5C6E75F089C47C7A9D5D3B500314C12]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>shipping_mode</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[shipping_mode]</local-name>
+            <parent-name>[supply_chain_analysis_cleaned.csv]</parent-name>
+            <remote-alias>shipping_mode</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[supply_chain_analysis_cleaned.csv_D5C6E75F089C47C7A9D5D3B500314C12]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='sales_millions' datatype='real' name='[Calculation_1010776642252447744]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([sales]) / 1000000' />
+      </column>
+      <column caption='on_time_rate' datatype='real' name='[Calculation_872290953631600640]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='ROUND(&#13;&#10;  (SUM(IIF([late_delivery_risk] = 0, 1, 0)) / COUNT([late_delivery_risk])) * 100,&#13;&#10;1)' />
+      </column>
+      <column caption='delivery_delay' datatype='real' default-format='n#,##0.0;-#,##0.0' name='[Calculation_872290953633742849]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='ROUND(&#13;&#10;  IIF(&#13;&#10;    [days_for_shipping_real] - [days_for_shipment_scheduled] &gt; 0,&#13;&#10;    [days_for_shipping_real] - [days_for_shipment_scheduled],&#13;&#10;    NULL&#13;&#10;  ),&#13;&#10;1&#13;&#10;)' />
+      </column>
+      <column caption='customer_lifetime_value' datatype='real' name='[Calculation_872290953635008515]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([sales])' />
+      </column>
+      <column caption='late_delivery_rate' datatype='real' name='[Calculation_872290953644990468]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM(IIF([late_delivery_risk] = 1, 1, 0)) / COUNT([late_delivery_risk])' />
+      </column>
+      <column caption='supply_chain_analysis_cleaned.csv' datatype='table' name='[__tableau_internal_object_id__].[supply_chain_analysis_cleaned.csv_D5C6E75F089C47C7A9D5D3B500314C12]' role='measure' type='quantitative' />
+      <column caption='Benefit Per Order' datatype='real' name='[benefit_per_order]' role='measure' type='quantitative' />
+      <column caption='Category Name' datatype='string' name='[category_name]' role='dimension' type='nominal' />
+      <column caption='Customer Country' datatype='string' name='[customer_country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Customer Id' datatype='integer' name='[customer_id]' role='dimension' type='ordinal' />
+      <column caption='Customer Segment' datatype='string' name='[customer_segment]' role='dimension' type='nominal' />
+      <column caption='Customer State' datatype='string' name='[customer_state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Days For Shipment Scheduled' datatype='integer' name='[days_for_shipment_scheduled]' role='measure' type='quantitative' />
+      <column caption='Days For Shipping Real' datatype='integer' name='[days_for_shipping_real]' role='measure' type='quantitative' />
+      <column caption='Delivery Status' datatype='string' name='[delivery_status]' role='dimension' type='nominal' />
+      <column caption='Department Name' datatype='string' name='[department_name]' role='dimension' type='nominal' />
+      <column caption='Late Delivery Risk' datatype='integer' name='[late_delivery_risk]' role='measure' type='quantitative' />
+      <column aggregation='Avg' caption='Latitude' datatype='real' name='[latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Avg' caption='Longitude' datatype='real' name='[longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column caption='Market' datatype='string' name='[market]' role='dimension' type='nominal' />
+      <column caption='Order Country' datatype='string' name='[order_country]' role='dimension' semantic-role='[Country].[Name]' type='nominal'>
+        <semantic-values semantic-role='[Country].[Name]'>
+          <semantic-value key='&quot;República de Gambia&quot;' value='&quot;Gambia&quot;' />
+        </semantic-values>
+      </column>
+      <column caption='Order Date Dateorders' datatype='datetime' name='[order_date_dateorders]' role='dimension' type='ordinal' />
+      <column caption='Order Id' datatype='integer' name='[order_id]' role='dimension' type='ordinal' />
+      <column caption='Order Item Discount' datatype='real' name='[order_item_discount]' role='measure' type='quantitative' />
+      <column caption='Order Item Quantity' datatype='integer' name='[order_item_quantity]' role='measure' type='quantitative' />
+      <column caption='Order Item Total' datatype='real' name='[order_item_total]' role='measure' type='quantitative' />
+      <column caption='Order Status' datatype='string' name='[order_status]' role='dimension' type='nominal' />
+      <column caption='Product Name' datatype='string' name='[product_name]' role='dimension' type='nominal' />
+      <column caption='Product Price' datatype='real' name='[product_price]' role='measure' type='quantitative' />
+      <column caption='Sales' datatype='real' default-format='c&quot;$&quot;#,##0;-&quot;$&quot;#,##0' name='[sales]' role='measure' type='quantitative' />
+      <column caption='Sales Per Customer' datatype='real' name='[sales_per_customer]' role='measure' type='quantitative' />
+      <column caption='Shipping Date Dateorders' datatype='datetime' name='[shipping_date_dateorders]' role='dimension' type='ordinal' />
+      <column caption='Shipping Mode' datatype='string' name='[shipping_mode]' role='dimension' type='nominal' />
+      <column-instance column='[days_for_shipping_real]' derivation='Avg' name='[avg:days_for_shipping_real:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[late_delivery_risk]' derivation='Avg' name='[avg:late_delivery_risk:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[category_name]' derivation='None' name='[none:category_name:nk]' pivot='key' type='nominal' />
+      <column-instance column='[market]' derivation='None' name='[none:market:nk]' pivot='key' type='nominal' />
+      <column-instance column='[order_status]' derivation='None' name='[none:order_status:nk]' pivot='key' type='nominal' />
+      <column-instance column='[shipping_mode]' derivation='None' name='[none:shipping_mode:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/USER/AppData/Local/Temp/TableauTemp/#TableauTemp_0lvxq9x0hn2ps610e4hjk1phv168.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='10/30/2025 10:29:58 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>days_for_shipping_real</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[days_for_shipping_real]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>days_for_shipping_real</remote-alias>
+              <ordinal>0</ordinal>
+              <family>supply_chain_analysis_cleaned.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[supply_chain_analysis_cleaned.csv_D5C6E75F089C47C7A9D5D3B500314C12]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>days_for_shipment_scheduled</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[days_for_shipment_scheduled]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>days_for_shipment_scheduled</remote-alias>
+              <ordinal>1</ordinal>
+              <family>supply_chain_analysis_cleaned.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[supply_chain_analysis_cleaned.csv_D5C6E75F089C47C7A9D5D3B500314C12]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>benefit_per_order</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[benefit_per_order]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>benefit_per_order</remote-alias>
+              <ordinal>2</ordinal>
+              <family>supply_chain_analysis_cleaned.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>30603</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[supply_chain_analysis_cleaned.csv_D5C6E75F089C47C7A9D5D3B500314C12]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>sales_per_customer</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[sales_per_customer]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>sales_per_customer</remote-alias>
+              <ordinal>3</ordinal>
+              <family>supply_chain_analysis_cleaned.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3825</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[supply_chain_analysis_cleaned.csv_D5C6E75F089C47C7A9D5D3B500314C12]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>delivery_status</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[delivery_status]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>delivery_status</remote-alias>
+              <ordinal>4</ordinal>
+              <family>supply_chain_analysis_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[supply_chain_analysis_cleaned.csv_D5C6E75F089C47C7A9D5D3B500314C12]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>late_delivery_risk</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[late_delivery_risk]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>late_delivery_risk</remote-alias>
+              <ordinal>5</ordinal>
+              <family>supply_chain_analysis_cleaned.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[supply_chain_analysis_cleaned.csv_D5C6E75F089C47C7A9D5D3B500314C12]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>category_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[category_name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>category_name</remote-alias>
+              <ordinal>6</ordinal>
+              <family>supply_chain_analysis_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>141</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[supply_chain_analysis_cleaned.csv_D5C6E75F089C47C7A9D5D3B500314C12]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>customer_country</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[customer_country]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>customer_country</remote-alias>
+              <ordinal>7</ordinal>
+              <family>supply_chain_analysis_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[supply_chain_analysis_cleaned.csv_D5C6E75F089C47C7A9D5D3B500314C12]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>customer_id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[customer_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>customer_id</remote-alias>
+              <ordinal>8</ordinal>
+              <family>supply_chain_analysis_cleaned.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>37040</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[supply_chain_analysis_cleaned.csv_D5C6E75F089C47C7A9D5D3B500314C12]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>customer_segment</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[customer_segment]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>customer_segment</remote-alias>
+              <ordinal>9</ordinal>
+              <family>supply_chain_analysis_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[supply_chain_analysis_cleaned.csv_D5C6E75F089C47C7A9D5D3B500314C12]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>customer_state</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[customer_state]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>customer_state</remote-alias>
+              <ordinal>10</ordinal>
+              <family>supply_chain_analysis_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>80</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[supply_chain_analysis_cleaned.csv_D5C6E75F089C47C7A9D5D3B500314C12]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>department_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[department_name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>department_name</remote-alias>
+              <ordinal>11</ordinal>
+              <family>supply_chain_analysis_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>11</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[supply_chain_analysis_cleaned.csv_D5C6E75F089C47C7A9D5D3B500314C12]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>latitude</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[latitude]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>latitude</remote-alias>
+              <ordinal>12</ordinal>
+              <family>supply_chain_analysis_cleaned.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>22929</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[supply_chain_analysis_cleaned.csv_D5C6E75F089C47C7A9D5D3B500314C12]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>longitude</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[longitude]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>longitude</remote-alias>
+              <ordinal>13</ordinal>
+              <family>supply_chain_analysis_cleaned.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>11967</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[supply_chain_analysis_cleaned.csv_D5C6E75F089C47C7A9D5D3B500314C12]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>market</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[market]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>market</remote-alias>
+              <ordinal>14</ordinal>
+              <family>supply_chain_analysis_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[supply_chain_analysis_cleaned.csv_D5C6E75F089C47C7A9D5D3B500314C12]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>order_country</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[order_country]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>order_country</remote-alias>
+              <ordinal>15</ordinal>
+              <family>supply_chain_analysis_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>361</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[supply_chain_analysis_cleaned.csv_D5C6E75F089C47C7A9D5D3B500314C12]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>order_date_dateorders</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[order_date_dateorders]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>order_date_dateorders</remote-alias>
+              <ordinal>16</ordinal>
+              <family>supply_chain_analysis_cleaned.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>81780</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[supply_chain_analysis_cleaned.csv_D5C6E75F089C47C7A9D5D3B500314C12]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>order_id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[order_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>order_id</remote-alias>
+              <ordinal>17</ordinal>
+              <family>supply_chain_analysis_cleaned.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>81780</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[supply_chain_analysis_cleaned.csv_D5C6E75F089C47C7A9D5D3B500314C12]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>order_item_discount</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[order_item_discount]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>order_item_discount</remote-alias>
+              <ordinal>18</ordinal>
+              <family>supply_chain_analysis_cleaned.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1232</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[supply_chain_analysis_cleaned.csv_D5C6E75F089C47C7A9D5D3B500314C12]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>order_item_quantity</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[order_item_quantity]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>order_item_quantity</remote-alias>
+              <ordinal>19</ordinal>
+              <family>supply_chain_analysis_cleaned.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[supply_chain_analysis_cleaned.csv_D5C6E75F089C47C7A9D5D3B500314C12]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>sales</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[sales]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>sales</remote-alias>
+              <ordinal>20</ordinal>
+              <family>supply_chain_analysis_cleaned.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>521</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[supply_chain_analysis_cleaned.csv_D5C6E75F089C47C7A9D5D3B500314C12]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>order_item_total</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[order_item_total]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>order_item_total</remote-alias>
+              <ordinal>21</ordinal>
+              <family>supply_chain_analysis_cleaned.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3825</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[supply_chain_analysis_cleaned.csv_D5C6E75F089C47C7A9D5D3B500314C12]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>order_status</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[order_status]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>order_status</remote-alias>
+              <ordinal>22</ordinal>
+              <family>supply_chain_analysis_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[supply_chain_analysis_cleaned.csv_D5C6E75F089C47C7A9D5D3B500314C12]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>product_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[product_name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>product_name</remote-alias>
+              <ordinal>23</ordinal>
+              <family>supply_chain_analysis_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>378</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[supply_chain_analysis_cleaned.csv_D5C6E75F089C47C7A9D5D3B500314C12]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>product_price</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[product_price]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>product_price</remote-alias>
+              <ordinal>24</ordinal>
+              <family>supply_chain_analysis_cleaned.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>177</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[supply_chain_analysis_cleaned.csv_D5C6E75F089C47C7A9D5D3B500314C12]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>shipping_date_dateorders</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[shipping_date_dateorders]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>shipping_date_dateorders</remote-alias>
+              <ordinal>25</ordinal>
+              <family>supply_chain_analysis_cleaned.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>81780</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[supply_chain_analysis_cleaned.csv_D5C6E75F089C47C7A9D5D3B500314C12]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>shipping_mode</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[shipping_mode]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>shipping_mode</remote-alias>
+              <ordinal>26</ordinal>
+              <family>supply_chain_analysis_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[supply_chain_analysis_cleaned.csv_D5C6E75F089C47C7A9D5D3B500314C12]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:shipping_mode:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Second Class&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Same Day&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;First Class&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Standard Class&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#2a5783'>
+              <bucket>&quot;[federated.0x9or710sebycz125bpjl1acafwd].[avg:days_for_shipping_real:qk]&quot;</bucket>
+            </map>
+            <map to='#b9ddf1'>
+              <bucket>&quot;[federated.0x9or710sebycz125bpjl1acafwd].[avg:late_delivery_risk:qk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:order_status:nk]' palette='blue_10_0' type='palette'>
+            <map to='#2a5783'>
+              <bucket>&quot;SUSPECTED_FRAUD&quot;</bucket>
+            </map>
+            <map to='#396794'>
+              <bucket>&quot;PROCESSING&quot;</bucket>
+            </map>
+            <map to='#4776a4'>
+              <bucket>&quot;PENDING_PAYMENT&quot;</bucket>
+            </map>
+            <map to='#5586b3'>
+              <bucket>&quot;PENDING&quot;</bucket>
+            </map>
+            <map to='#6798c1'>
+              <bucket>&quot;PAYMENT_REVIEW&quot;</bucket>
+            </map>
+            <map to='#78a9ce'>
+              <bucket>&quot;ON_HOLD&quot;</bucket>
+            </map>
+            <map to='#8bbadc'>
+              <bucket>&quot;COMPLETE&quot;</bucket>
+            </map>
+            <map to='#a1cce7'>
+              <bucket>&quot;CLOSED&quot;</bucket>
+            </map>
+            <map to='#b9ddf1'>
+              <bucket>&quot;CANCELED&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:category_name:nk]' palette='blue_10_0' type='palette'>
+            <map to='#2a5783'>
+              <bucket>&quot;Women&apos;s Golf Clubs&quot;</bucket>
+            </map>
+            <map to='#2c5985'>
+              <bucket>&quot;Women&apos;s Clothing&quot;</bucket>
+            </map>
+            <map to='#2f5c88'>
+              <bucket>&quot;Women&apos;s Apparel&quot;</bucket>
+            </map>
+            <map to='#315e8b'>
+              <bucket>&quot;Water Sports&quot;</bucket>
+            </map>
+            <map to='#34618e'>
+              <bucket>&quot;Video Games&quot;</bucket>
+            </map>
+            <map to='#376491'>
+              <bucket>&quot;Trade-In&quot;</bucket>
+            </map>
+            <map to='#396693'>
+              <bucket>&quot;Toys&quot;</bucket>
+            </map>
+            <map to='#3b6996'>
+              <bucket>&quot;Tennis &amp; Racquet&quot;</bucket>
+            </map>
+            <map to='#3d6b99'>
+              <bucket>&quot;Strength Training&quot;</bucket>
+            </map>
+            <map to='#406e9b'>
+              <bucket>&quot;Sporting Goods&quot;</bucket>
+            </map>
+            <map to='#42709e'>
+              <bucket>&quot;Soccer&quot;</bucket>
+            </map>
+            <map to='#4473a1'>
+              <bucket>&quot;Shop By Sport&quot;</bucket>
+            </map>
+            <map to='#4675a3'>
+              <bucket>&quot;Pet Supplies&quot;</bucket>
+            </map>
+            <map to='#4878a6'>
+              <bucket>&quot;Music&quot;</bucket>
+            </map>
+            <map to='#4a7ba9'>
+              <bucket>&quot;Men&apos;s Golf Clubs&quot;</bucket>
+            </map>
+            <map to='#4c7dab'>
+              <bucket>&quot;Men&apos;s Footwear&quot;</bucket>
+            </map>
+            <map to='#4f80ad'>
+              <bucket>&quot;Men&apos;s Clothing&quot;</bucket>
+            </map>
+            <map to='#5283b0'>
+              <bucket>&quot;Lacrosse&quot;</bucket>
+            </map>
+            <map to='#5485b2'>
+              <bucket>&quot;Kids&apos; Golf Clubs&quot;</bucket>
+            </map>
+            <map to='#5788b4'>
+              <bucket>&quot;Indoor/Outdoor Games&quot;</bucket>
+            </map>
+            <map to='#5a8bb6'>
+              <bucket>&quot;Hunting &amp; Shooting&quot;</bucket>
+            </map>
+            <map to='#5d8eb9'>
+              <bucket>&quot;Hockey&quot;</bucket>
+            </map>
+            <map to='#5f90bb'>
+              <bucket>&quot;Health and Beauty&quot;</bucket>
+            </map>
+            <map to='#6293bd'>
+              <bucket>&quot;Golf Shoes&quot;</bucket>
+            </map>
+            <map to='#6596bf'>
+              <bucket>&quot;Golf Gloves&quot;</bucket>
+            </map>
+            <map to='#6899c2'>
+              <bucket>&quot;Golf Balls&quot;</bucket>
+            </map>
+            <map to='#6b9cc4'>
+              <bucket>&quot;Golf Bags &amp; Carts&quot;</bucket>
+            </map>
+            <map to='#6e9fc6'>
+              <bucket>&quot;Golf Apparel&quot;</bucket>
+            </map>
+            <map to='#71a2c8'>
+              <bucket>&quot;Girls&apos; Apparel&quot;</bucket>
+            </map>
+            <map to='#73a4cb'>
+              <bucket>&quot;Garden&quot;</bucket>
+            </map>
+            <map to='#76a7cd'>
+              <bucket>&quot;Fitness Accessories&quot;</bucket>
+            </map>
+            <map to='#79aacf'>
+              <bucket>&quot;Fishing&quot;</bucket>
+            </map>
+            <map to='#7cacd1'>
+              <bucket>&quot;Electronics&quot;</bucket>
+            </map>
+            <map to='#7fafd4'>
+              <bucket>&quot;DVDs&quot;</bucket>
+            </map>
+            <map to='#82b2d6'>
+              <bucket>&quot;Crafts&quot;</bucket>
+            </map>
+            <map to='#85b5d8'>
+              <bucket>&quot;Consumer Electronics&quot;</bucket>
+            </map>
+            <map to='#88b8da'>
+              <bucket>&quot;Computers&quot;</bucket>
+            </map>
+            <map to='#8cbbdc'>
+              <bucket>&quot;Cleats&quot;</bucket>
+            </map>
+            <map to='#8fbede'>
+              <bucket>&quot;Children&apos;s Clothing&quot;</bucket>
+            </map>
+            <map to='#93c1e0'>
+              <bucket>&quot;CDs&quot;</bucket>
+            </map>
+            <map to='#96c4e2'>
+              <bucket>&quot;Cardio Equipment&quot;</bucket>
+            </map>
+            <map to='#9ac7e4'>
+              <bucket>&quot;Camping &amp; Hiking&quot;</bucket>
+            </map>
+            <map to='#9ecae6'>
+              <bucket>&quot;Cameras&quot;</bucket>
+            </map>
+            <map to='#a1cce7'>
+              <bucket>&quot;Boxing &amp; MMA&quot;</bucket>
+            </map>
+            <map to='#a5cfe9'>
+              <bucket>&quot;Books&quot;</bucket>
+            </map>
+            <map to='#a9d2eb'>
+              <bucket>&quot;Basketball&quot;</bucket>
+            </map>
+            <map to='#add5ec'>
+              <bucket>&quot;Baseball &amp; Softball&quot;</bucket>
+            </map>
+            <map to='#b1d7ee'>
+              <bucket>&quot;Baby&quot;</bucket>
+            </map>
+            <map to='#b5daef'>
+              <bucket>&quot;As Seen on  TV!&quot;</bucket>
+            </map>
+            <map to='#b9ddf1'>
+              <bucket>&quot;Accessories&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:market:nk]' palette='blue_10_0' type='palette'>
+            <map to='#2a5783'>
+              <bucket>&quot;USCA&quot;</bucket>
+            </map>
+            <map to='#4776a4'>
+              <bucket>&quot;Pacific Asia&quot;</bucket>
+            </map>
+            <map to='#6798c1'>
+              <bucket>&quot;LATAM&quot;</bucket>
+            </map>
+            <map to='#8bbadc'>
+              <bucket>&quot;Europe&quot;</bucket>
+            </map>
+            <map to='#b9ddf1'>
+              <bucket>&quot;Africa&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Philippines&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='supply_chain_analysis_cleaned.csv' id='supply_chain_analysis_cleaned.csv_D5C6E75F089C47C7A9D5D3B500314C12'>
+            <properties context=''>
+              <relation connection='textscan.0qg4h5e18gz4ui12p69cv1ac9tdg' name='supply_chain_analysis_cleaned.csv' table='[supply_chain_analysis_cleaned#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_PH' separator=','>
+                  <column datatype='integer' name='days_for_shipping_real' ordinal='0' />
+                  <column datatype='integer' name='days_for_shipment_scheduled' ordinal='1' />
+                  <column datatype='real' name='benefit_per_order' ordinal='2' />
+                  <column datatype='real' name='sales_per_customer' ordinal='3' />
+                  <column datatype='string' name='delivery_status' ordinal='4' />
+                  <column datatype='integer' name='late_delivery_risk' ordinal='5' />
+                  <column datatype='string' name='category_name' ordinal='6' />
+                  <column datatype='string' name='customer_country' ordinal='7' />
+                  <column datatype='integer' name='customer_id' ordinal='8' />
+                  <column datatype='string' name='customer_segment' ordinal='9' />
+                  <column datatype='string' name='customer_state' ordinal='10' />
+                  <column datatype='string' name='department_name' ordinal='11' />
+                  <column datatype='real' name='latitude' ordinal='12' />
+                  <column datatype='real' name='longitude' ordinal='13' />
+                  <column datatype='string' name='market' ordinal='14' />
+                  <column datatype='string' name='order_country' ordinal='15' />
+                  <column datatype='datetime' name='order_date_dateorders' ordinal='16' />
+                  <column datatype='integer' name='order_id' ordinal='17' />
+                  <column datatype='real' name='order_item_discount' ordinal='18' />
+                  <column datatype='integer' name='order_item_quantity' ordinal='19' />
+                  <column datatype='real' name='sales' ordinal='20' />
+                  <column datatype='real' name='order_item_total' ordinal='21' />
+                  <column datatype='string' name='order_status' ordinal='22' />
+                  <column datatype='string' name='product_name' ordinal='23' />
+                  <column datatype='real' name='product_price' ordinal='24' />
+                  <column datatype='datetime' name='shipping_date_dateorders' ordinal='25' />
+                  <column datatype='string' name='shipping_mode' ordinal='26' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <shared-views>
+    <shared-view name='federated.0x9or710sebycz125bpjl1acafwd'>
+      <datasources>
+        <datasource caption='supply_chain_analysis_cleaned' name='federated.0x9or710sebycz125bpjl1acafwd' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0x9or710sebycz125bpjl1acafwd'>
+        <column caption='Customer Segment' datatype='string' name='[customer_segment]' role='dimension' type='nominal' />
+        <column caption='Market' datatype='string' name='[market]' role='dimension' type='nominal' />
+        <column-instance column='[customer_segment]' derivation='None' name='[none:customer_segment:nk]' pivot='key' type='nominal' />
+        <column-instance column='[market]' derivation='None' name='[none:market:nk]' pivot='key' type='nominal' />
+        <column caption='Order Date Dateorders' datatype='datetime' name='[order_date_dateorders]' role='dimension' type='ordinal' />
+        <column-instance column='[order_date_dateorders]' derivation='Month-Trunc' name='[tmn:order_date_dateorders:qk]' pivot='key' type='quantitative' />
+      </datasource-dependencies>
+      <filter class='categorical' column='[federated.0x9or710sebycz125bpjl1acafwd].[none:customer_segment:nk]'>
+        <groupfilter function='level-members' level='[none:customer_segment:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+        <target field='[federated.0x9or710sebycz125bpjl1acafwd].[none:customer_segment:nk]' />
+      </filter>
+      <filter class='categorical' column='[federated.0x9or710sebycz125bpjl1acafwd].[none:market:nk]'>
+        <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+          <groupfilter function='member' level='[none:market:nk]' member='&quot;Africa&quot;' />
+          <groupfilter function='member' level='[none:market:nk]' member='&quot;Europe&quot;' />
+          <groupfilter function='member' level='[none:market:nk]' member='&quot;LATAM&quot;' />
+          <groupfilter function='member' level='[none:market:nk]' member='&quot;Pacific Asia&quot;' />
+          <groupfilter function='member' level='[none:market:nk]' member='&quot;USCA&quot;' />
+        </groupfilter>
+        <target field='[federated.0x9or710sebycz125bpjl1acafwd].[none:market:nk]' />
+      </filter>
+      <filter class='quantitative' column='[federated.0x9or710sebycz125bpjl1acafwd].[tmn:order_date_dateorders:qk]' included-values='in-range'>
+        <min>#2015-01-01 00:00:00#</min>
+        <max>#2018-01-01 00:00:00#</max>
+        <target field='[federated.0x9or710sebycz125bpjl1acafwd].[tmn:order_date_dateorders:qk]' />
+      </filter>
+    </shared-view>
+  </shared-views>
+  <worksheets>
+    <worksheet name='Average Delivery Delay by Shipping Mode'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='supply_chain_analysis_cleaned' name='federated.0x9or710sebycz125bpjl1acafwd' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0x9or710sebycz125bpjl1acafwd'>
+            <column caption='delivery_delay' datatype='real' default-format='n#,##0.0;-#,##0.0' name='[Calculation_872290953633742849]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='ROUND(&#13;&#10;  IIF(&#13;&#10;    [days_for_shipping_real] - [days_for_shipment_scheduled] &gt; 0,&#13;&#10;    [days_for_shipping_real] - [days_for_shipment_scheduled],&#13;&#10;    NULL&#13;&#10;  ),&#13;&#10;1&#13;&#10;)' />
+            </column>
+            <column-instance column='[Calculation_872290953633742849]' derivation='Avg' name='[avg:Calculation_872290953633742849:qk]' pivot='key' type='quantitative' />
+            <column caption='Customer Segment' datatype='string' name='[customer_segment]' role='dimension' type='nominal' />
+            <column caption='Days For Shipment Scheduled' datatype='integer' name='[days_for_shipment_scheduled]' role='measure' type='quantitative' />
+            <column caption='Days For Shipping Real' datatype='integer' name='[days_for_shipping_real]' role='measure' type='quantitative' />
+            <column caption='Market' datatype='string' name='[market]' role='dimension' type='nominal' />
+            <column-instance column='[customer_segment]' derivation='None' name='[none:customer_segment:nk]' pivot='key' type='nominal' />
+            <column-instance column='[market]' derivation='None' name='[none:market:nk]' pivot='key' type='nominal' />
+            <column-instance column='[shipping_mode]' derivation='None' name='[none:shipping_mode:nk]' pivot='key' type='nominal' />
+            <column caption='Order Date Dateorders' datatype='datetime' name='[order_date_dateorders]' role='dimension' type='ordinal' />
+            <column caption='Shipping Mode' datatype='string' name='[shipping_mode]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_872290953633742849]' derivation='Sum' name='[sum:Calculation_872290953633742849:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[order_date_dateorders]' derivation='Month-Trunc' name='[tmn:order_date_dateorders:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <computed-sort column='[federated.0x9or710sebycz125bpjl1acafwd].[none:shipping_mode:nk]' direction='DESC' using='[federated.0x9or710sebycz125bpjl1acafwd].[sum:Calculation_872290953633742849:qk]' />
+          <slices>
+            <column>[federated.0x9or710sebycz125bpjl1acafwd].[none:customer_segment:nk]</column>
+            <column>[federated.0x9or710sebycz125bpjl1acafwd].[tmn:order_date_dateorders:qk]</column>
+            <column>[federated.0x9or710sebycz125bpjl1acafwd].[none:market:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0x9or710sebycz125bpjl1acafwd].[avg:Calculation_872290953633742849:qk]' scope='cols' value='Delay Days' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#1c2e4a' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0x9or710sebycz125bpjl1acafwd].[none:shipping_mode:nk]</rows>
+        <cols>[federated.0x9or710sebycz125bpjl1acafwd].[avg:Calculation_872290953633742849:qk]</cols>
+      </table>
+      <simple-id uuid='{9FBC8690-9D5F-4FBA-ACAF-B07816C073C0}' />
+    </worksheet>
+    <worksheet name='Average Sales per Customer Segment'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='supply_chain_analysis_cleaned' name='federated.0x9or710sebycz125bpjl1acafwd' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0x9or710sebycz125bpjl1acafwd'>
+            <column-instance column='[sales_per_customer]' derivation='Avg' name='[avg:sales_per_customer:qk]' pivot='key' type='quantitative' />
+            <column caption='Customer Segment' datatype='string' name='[customer_segment]' role='dimension' type='nominal' />
+            <column caption='Market' datatype='string' name='[market]' role='dimension' type='nominal' />
+            <column-instance column='[customer_segment]' derivation='None' name='[none:customer_segment:nk]' pivot='key' type='nominal' />
+            <column-instance column='[market]' derivation='None' name='[none:market:nk]' pivot='key' type='nominal' />
+            <column caption='Order Date Dateorders' datatype='datetime' name='[order_date_dateorders]' role='dimension' type='ordinal' />
+            <column caption='Sales Per Customer' datatype='real' name='[sales_per_customer]' role='measure' type='quantitative' />
+            <column-instance column='[order_date_dateorders]' derivation='Month-Trunc' name='[tmn:order_date_dateorders:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.0x9or710sebycz125bpjl1acafwd].[none:customer_segment:nk]</column>
+            <column>[federated.0x9or710sebycz125bpjl1acafwd].[tmn:order_date_dateorders:qk]</column>
+            <column>[federated.0x9or710sebycz125bpjl1acafwd].[none:market:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0x9or710sebycz125bpjl1acafwd].[avg:sales_per_customer:qk]' scope='cols' value='Average Sales per Customer ($)' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#1c2e4a' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0x9or710sebycz125bpjl1acafwd].[none:customer_segment:nk]</rows>
+        <cols>[federated.0x9or710sebycz125bpjl1acafwd].[avg:sales_per_customer:qk]</cols>
+      </table>
+      <simple-id uuid='{F4978FBA-5AD6-4772-BABC-5E43F0E306F7}' />
+    </worksheet>
+    <worksheet name='Monthly Sales Growth Trend'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='supply_chain_analysis_cleaned' name='federated.0x9or710sebycz125bpjl1acafwd' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0x9or710sebycz125bpjl1acafwd'>
+            <column caption='Customer Segment' datatype='string' name='[customer_segment]' role='dimension' type='nominal' />
+            <column caption='Market' datatype='string' name='[market]' role='dimension' type='nominal' />
+            <column-instance column='[customer_segment]' derivation='None' name='[none:customer_segment:nk]' pivot='key' type='nominal' />
+            <column-instance column='[market]' derivation='None' name='[none:market:nk]' pivot='key' type='nominal' />
+            <column caption='Order Date Dateorders' datatype='datetime' name='[order_date_dateorders]' role='dimension' type='ordinal' />
+            <column-instance column='[sales]' derivation='Sum' name='[pcdf:sum:sales:qk]' pivot='key' type='quantitative'>
+              <table-calc diff-options='Relative' ordering-type='Rows' type='PctDiff'>
+                <address>
+                  <value>-1</value>
+                </address>
+              </table-calc>
+            </column-instance>
+            <column caption='Sales' datatype='real' default-format='c&quot;$&quot;#,##0;-&quot;$&quot;#,##0' name='[sales]' role='measure' type='quantitative' />
+            <column-instance column='[order_date_dateorders]' derivation='Month-Trunc' name='[tmn:order_date_dateorders:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.0x9or710sebycz125bpjl1acafwd].[pcdf:sum:sales:qk]' included-values='non-null' />
+          <slices>
+            <column>[federated.0x9or710sebycz125bpjl1acafwd].[tmn:order_date_dateorders:qk]</column>
+            <column>[federated.0x9or710sebycz125bpjl1acafwd].[none:customer_segment:nk]</column>
+            <column>[federated.0x9or710sebycz125bpjl1acafwd].[pcdf:sum:sales:qk]</column>
+            <column>[federated.0x9or710sebycz125bpjl1acafwd].[none:market:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0x9or710sebycz125bpjl1acafwd].[tmn:order_date_dateorders:qk]' scope='cols' value='Month' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[federated.0x9or710sebycz125bpjl1acafwd].[tmn:order_date_dateorders:qk]' value='Month'>
+              <formatted-text>
+                <run>Month</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#1c2e4a' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0x9or710sebycz125bpjl1acafwd].[pcdf:sum:sales:qk]</rows>
+        <cols>[federated.0x9or710sebycz125bpjl1acafwd].[tmn:order_date_dateorders:qk]</cols>
+      </table>
+      <simple-id uuid='{C4FB35F9-20A1-4166-8B1A-D7F7E6EABD10}' />
+    </worksheet>
+    <worksheet name='On-Time Delivery Rate'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='supply_chain_analysis_cleaned' name='federated.0x9or710sebycz125bpjl1acafwd' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0x9or710sebycz125bpjl1acafwd'>
+            <column caption='on_time_rate' datatype='real' name='[Calculation_872290953631600640]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='ROUND(&#13;&#10;  (SUM(IIF([late_delivery_risk] = 0, 1, 0)) / COUNT([late_delivery_risk])) * 100,&#13;&#10;1)' />
+            </column>
+            <column caption='Customer Segment' datatype='string' name='[customer_segment]' role='dimension' type='nominal' />
+            <column caption='Late Delivery Risk' datatype='integer' name='[late_delivery_risk]' role='measure' type='quantitative' />
+            <column caption='Market' datatype='string' name='[market]' role='dimension' type='nominal' />
+            <column-instance column='[customer_segment]' derivation='None' name='[none:customer_segment:nk]' pivot='key' type='nominal' />
+            <column-instance column='[market]' derivation='None' name='[none:market:nk]' pivot='key' type='nominal' />
+            <column caption='Order Date Dateorders' datatype='datetime' name='[order_date_dateorders]' role='dimension' type='ordinal' />
+            <column-instance column='[order_date_dateorders]' derivation='Month-Trunc' name='[tmn:order_date_dateorders:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_872290953631600640]' derivation='User' name='[usr:Calculation_872290953631600640:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.0x9or710sebycz125bpjl1acafwd].[none:customer_segment:nk]</column>
+            <column>[federated.0x9or710sebycz125bpjl1acafwd].[tmn:order_date_dateorders:qk]</column>
+            <column>[federated.0x9or710sebycz125bpjl1acafwd].[none:market:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='239' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Text' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.0x9or710sebycz125bpjl1acafwd].[usr:Calculation_872290953631600640:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontcolor='#1c2e4a' fontsize='48'>&lt;</run>
+                <run bold='true' fontcolor='#1c2e4a' fontsize='48'>[federated.0x9or710sebycz125bpjl1acafwd].[usr:Calculation_872290953631600640:qk]</run>
+                <run bold='true' fontcolor='#1c2e4a' fontsize='48'>&gt;%</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='1' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{DC29133A-1918-4C80-971B-F45F1B2BC7C3}' />
+    </worksheet>
+    <worksheet name='Order Status Distribution'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='supply_chain_analysis_cleaned' name='federated.0x9or710sebycz125bpjl1acafwd' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0x9or710sebycz125bpjl1acafwd'>
+            <column-instance column='[order_id]' derivation='Count' name='[cnt:order_id:qk]' pivot='key' type='quantitative' />
+            <column caption='Customer Segment' datatype='string' name='[customer_segment]' role='dimension' type='nominal' />
+            <column caption='Market' datatype='string' name='[market]' role='dimension' type='nominal' />
+            <column-instance column='[customer_segment]' derivation='None' name='[none:customer_segment:nk]' pivot='key' type='nominal' />
+            <column-instance column='[market]' derivation='None' name='[none:market:nk]' pivot='key' type='nominal' />
+            <column-instance column='[order_status]' derivation='None' name='[none:order_status:nk]' pivot='key' type='nominal' />
+            <column caption='Order Date Dateorders' datatype='datetime' name='[order_date_dateorders]' role='dimension' type='ordinal' />
+            <column caption='Order Id' datatype='integer' name='[order_id]' role='dimension' type='ordinal' />
+            <column caption='Order Status' datatype='string' name='[order_status]' role='dimension' type='nominal' />
+            <column-instance column='[order_date_dateorders]' derivation='Month-Trunc' name='[tmn:order_date_dateorders:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.0x9or710sebycz125bpjl1acafwd].[none:customer_segment:nk]</column>
+            <column>[federated.0x9or710sebycz125bpjl1acafwd].[tmn:order_date_dateorders:qk]</column>
+            <column>[federated.0x9or710sebycz125bpjl1acafwd].[none:market:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.0x9or710sebycz125bpjl1acafwd].[none:order_status:nk]' />
+              <size column='[federated.0x9or710sebycz125bpjl1acafwd].[cnt:order_id:qk]' />
+              <text column='[federated.0x9or710sebycz125bpjl1acafwd].[none:order_status:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{360FEDDA-C390-4C7E-A825-BAC7B53F3EE9}' />
+    </worksheet>
+    <worksheet name='Product Category Performance: Sales vs Profit'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='supply_chain_analysis_cleaned' name='federated.0x9or710sebycz125bpjl1acafwd' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0x9or710sebycz125bpjl1acafwd'>
+            <column caption='Benefit Per Order' datatype='real' name='[benefit_per_order]' role='measure' type='quantitative' />
+            <column caption='Category Name' datatype='string' name='[category_name]' role='dimension' type='nominal' />
+            <column caption='Customer Segment' datatype='string' name='[customer_segment]' role='dimension' type='nominal' />
+            <column caption='Market' datatype='string' name='[market]' role='dimension' type='nominal' />
+            <column-instance column='[category_name]' derivation='None' name='[none:category_name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[customer_segment]' derivation='None' name='[none:customer_segment:nk]' pivot='key' type='nominal' />
+            <column-instance column='[market]' derivation='None' name='[none:market:nk]' pivot='key' type='nominal' />
+            <column caption='Order Date Dateorders' datatype='datetime' name='[order_date_dateorders]' role='dimension' type='ordinal' />
+            <column caption='Sales' datatype='real' default-format='c&quot;$&quot;#,##0;-&quot;$&quot;#,##0' name='[sales]' role='measure' type='quantitative' />
+            <column-instance column='[benefit_per_order]' derivation='Sum' name='[sum:benefit_per_order:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[sales]' derivation='Sum' name='[sum:sales:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[order_date_dateorders]' derivation='Month-Trunc' name='[tmn:order_date_dateorders:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.0x9or710sebycz125bpjl1acafwd].[none:customer_segment:nk]</column>
+            <column>[federated.0x9or710sebycz125bpjl1acafwd].[tmn:order_date_dateorders:qk]</column>
+            <column>[federated.0x9or710sebycz125bpjl1acafwd].[none:market:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0x9or710sebycz125bpjl1acafwd].[sum:sales:qk]' scope='cols' value='Total Sales ($)' />
+            <encoding attr='space' class='0' field='[federated.0x9or710sebycz125bpjl1acafwd].[sum:sales:qk]' field-type='quantitative' max='7664973.870847675' min='-823033.86813133163' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.0x9or710sebycz125bpjl1acafwd].[sum:benefit_per_order:qk]' field-type='quantitative' max='876920.85369872604' min='-74694.45263382484' range-type='fixed' scope='rows' type='space' />
+            <format attr='title' class='0' field='[federated.0x9or710sebycz125bpjl1acafwd].[sum:benefit_per_order:qk]' scope='rows' value='Profit per Order ($)' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0x9or710sebycz125bpjl1acafwd].[none:category_name:nk]' />
+              <size column='[federated.0x9or710sebycz125bpjl1acafwd].[sum:sales:qk]' />
+              <text column='[federated.0x9or710sebycz125bpjl1acafwd].[none:category_name:nk]' />
+              <lod column='[federated.0x9or710sebycz125bpjl1acafwd].[none:category_name:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='1.4392818212509155' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0x9or710sebycz125bpjl1acafwd].[sum:benefit_per_order:qk]</rows>
+        <cols>[federated.0x9or710sebycz125bpjl1acafwd].[sum:sales:qk]</cols>
+      </table>
+      <simple-id uuid='{B6FC187B-A3E3-4C79-9F15-C00E8FF6A8AB}' />
+    </worksheet>
+    <worksheet name='Regional Sales by Country'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='supply_chain_analysis_cleaned' name='federated.0x9or710sebycz125bpjl1acafwd' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0x9or710sebycz125bpjl1acafwd'>
+            <column caption='Customer Segment' datatype='string' name='[customer_segment]' role='dimension' type='nominal' />
+            <column caption='Market' datatype='string' name='[market]' role='dimension' type='nominal' />
+            <column-instance column='[customer_segment]' derivation='None' name='[none:customer_segment:nk]' pivot='key' type='nominal' />
+            <column-instance column='[market]' derivation='None' name='[none:market:nk]' pivot='key' type='nominal' />
+            <column-instance column='[order_country]' derivation='None' name='[none:order_country:nk]' pivot='key' type='nominal' />
+            <column caption='Order Country' datatype='string' name='[order_country]' role='dimension' semantic-role='[Country].[Name]' type='nominal'>
+              <semantic-values semantic-role='[Country].[Name]'>
+                <semantic-value key='&quot;República de Gambia&quot;' value='&quot;Gambia&quot;' />
+              </semantic-values>
+            </column>
+            <column caption='Order Date Dateorders' datatype='datetime' name='[order_date_dateorders]' role='dimension' type='ordinal' />
+            <column caption='Sales' datatype='real' default-format='c&quot;$&quot;#,##0;-&quot;$&quot;#,##0' name='[sales]' role='measure' type='quantitative' />
+            <column-instance column='[sales]' derivation='Sum' name='[sum:sales:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[order_date_dateorders]' derivation='Month-Trunc' name='[tmn:order_date_dateorders:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.0x9or710sebycz125bpjl1acafwd].[none:customer_segment:nk]</column>
+            <column>[federated.0x9or710sebycz125bpjl1acafwd].[tmn:order_date_dateorders:qk]</column>
+            <column>[federated.0x9or710sebycz125bpjl1acafwd].[none:market:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0x9or710sebycz125bpjl1acafwd].[Longitude (generated)]' field-type='quantitative' max='20111016.473135725' min='-20276589.377129707' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.0x9or710sebycz125bpjl1acafwd].[Latitude (generated)]' field-type='quantitative' max='19659809.663630363' min='-8635341.2956301868' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0x9or710sebycz125bpjl1acafwd].[none:market:nk]' />
+              <size column='[federated.0x9or710sebycz125bpjl1acafwd].[sum:sales:qk]' />
+              <lod column='[federated.0x9or710sebycz125bpjl1acafwd].[none:order_country:nk]' />
+              <lod column='[federated.0x9or710sebycz125bpjl1acafwd].[none:order_country:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='1.4832596778869629' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0x9or710sebycz125bpjl1acafwd].[Latitude (generated)]</rows>
+        <cols>[federated.0x9or710sebycz125bpjl1acafwd].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{81108F12-BEC9-443E-AB4B-9980657C8A84}' />
+    </worksheet>
+    <worksheet name='Sales by Customer Segment'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='supply_chain_analysis_cleaned' name='federated.0x9or710sebycz125bpjl1acafwd' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0x9or710sebycz125bpjl1acafwd'>
+            <column caption='Customer Segment' datatype='string' name='[customer_segment]' role='dimension' type='nominal' />
+            <column caption='Market' datatype='string' name='[market]' role='dimension' type='nominal' />
+            <column-instance column='[customer_segment]' derivation='None' name='[none:customer_segment:nk]' pivot='key' type='nominal' />
+            <column-instance column='[market]' derivation='None' name='[none:market:nk]' pivot='key' type='nominal' />
+            <column caption='Order Date Dateorders' datatype='datetime' name='[order_date_dateorders]' role='dimension' type='ordinal' />
+            <column caption='Sales' datatype='real' default-format='c&quot;$&quot;#,##0;-&quot;$&quot;#,##0' name='[sales]' role='measure' type='quantitative' />
+            <column-instance column='[sales]' derivation='Sum' name='[sum:sales:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[order_date_dateorders]' derivation='Month-Trunc' name='[tmn:order_date_dateorders:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.0x9or710sebycz125bpjl1acafwd].[none:customer_segment:nk]</column>
+            <column>[federated.0x9or710sebycz125bpjl1acafwd].[tmn:order_date_dateorders:qk]</column>
+            <column>[federated.0x9or710sebycz125bpjl1acafwd].[none:market:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0x9or710sebycz125bpjl1acafwd].[sum:sales:qk]' scope='cols' value='Total Sales ($)' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='height-header' value='20' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#1c2e4a' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0x9or710sebycz125bpjl1acafwd].[none:customer_segment:nk]</rows>
+        <cols>[federated.0x9or710sebycz125bpjl1acafwd].[sum:sales:qk]</cols>
+      </table>
+      <simple-id uuid='{BDC7B2D4-D303-4AB8-97E2-E2C3E2E4AB94}' />
+    </worksheet>
+    <worksheet name='Shipping Mode Performance'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='supply_chain_analysis_cleaned' name='federated.0x9or710sebycz125bpjl1acafwd' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0x9or710sebycz125bpjl1acafwd'>
+            <column-instance column='[days_for_shipping_real]' derivation='Avg' name='[avg:days_for_shipping_real:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[late_delivery_risk]' derivation='Avg' name='[avg:late_delivery_risk:qk]' pivot='key' type='quantitative' />
+            <column caption='Customer Segment' datatype='string' name='[customer_segment]' role='dimension' type='nominal' />
+            <column caption='Days For Shipping Real' datatype='integer' name='[days_for_shipping_real]' role='measure' type='quantitative' />
+            <column caption='Late Delivery Risk' datatype='integer' name='[late_delivery_risk]' role='measure' type='quantitative' />
+            <column caption='Market' datatype='string' name='[market]' role='dimension' type='nominal' />
+            <column-instance column='[customer_segment]' derivation='None' name='[none:customer_segment:nk]' pivot='key' type='nominal' />
+            <column-instance column='[market]' derivation='None' name='[none:market:nk]' pivot='key' type='nominal' />
+            <column-instance column='[shipping_mode]' derivation='None' name='[none:shipping_mode:nk]' pivot='key' type='nominal' />
+            <column caption='Order Date Dateorders' datatype='datetime' name='[order_date_dateorders]' role='dimension' type='ordinal' />
+            <column caption='Shipping Mode' datatype='string' name='[shipping_mode]' role='dimension' type='nominal' />
+            <column-instance column='[order_date_dateorders]' derivation='Month-Trunc' name='[tmn:order_date_dateorders:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.0x9or710sebycz125bpjl1acafwd].[none:customer_segment:nk]</column>
+            <column>[federated.0x9or710sebycz125bpjl1acafwd].[tmn:order_date_dateorders:qk]</column>
+            <column>[federated.0x9or710sebycz125bpjl1acafwd].[none:market:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0x9or710sebycz125bpjl1acafwd].[avg:late_delivery_risk:qk]' field-type='quantitative' fold='true' scope='cols' synchronized='true' type='space' />
+            <format attr='title' class='0' field='[federated.0x9or710sebycz125bpjl1acafwd].[avg:days_for_shipping_real:qk]' scope='cols' value='Average Delivery Days' />
+            <format attr='title' class='0' field='[federated.0x9or710sebycz125bpjl1acafwd].[avg:late_delivery_risk:qk]' scope='cols' value='Late Delivery Rate' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0x9or710sebycz125bpjl1acafwd].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.0x9or710sebycz125bpjl1acafwd].[avg:days_for_shipping_real:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0x9or710sebycz125bpjl1acafwd].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.0x9or710sebycz125bpjl1acafwd].[avg:late_delivery_risk:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0x9or710sebycz125bpjl1acafwd].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0x9or710sebycz125bpjl1acafwd].[none:shipping_mode:nk]</rows>
+        <cols>([federated.0x9or710sebycz125bpjl1acafwd].[avg:days_for_shipping_real:qk] + [federated.0x9or710sebycz125bpjl1acafwd].[avg:late_delivery_risk:qk])</cols>
+      </table>
+      <simple-id uuid='{280144B9-7129-4650-A9FE-4A25A6A87789}' />
+    </worksheet>
+    <worksheet name='Total Sales'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='supply_chain_analysis_cleaned' name='federated.0x9or710sebycz125bpjl1acafwd' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0x9or710sebycz125bpjl1acafwd'>
+            <column caption='sales_millions' datatype='real' name='[Calculation_1010776642252447744]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([sales]) / 1000000' />
+            </column>
+            <column caption='Customer Segment' datatype='string' name='[customer_segment]' role='dimension' type='nominal' />
+            <column caption='Market' datatype='string' name='[market]' role='dimension' type='nominal' />
+            <column-instance column='[customer_segment]' derivation='None' name='[none:customer_segment:nk]' pivot='key' type='nominal' />
+            <column-instance column='[market]' derivation='None' name='[none:market:nk]' pivot='key' type='nominal' />
+            <column caption='Order Date Dateorders' datatype='datetime' name='[order_date_dateorders]' role='dimension' type='ordinal' />
+            <column caption='Sales' datatype='real' default-format='c&quot;$&quot;#,##0;-&quot;$&quot;#,##0' name='[sales]' role='measure' type='quantitative' />
+            <column-instance column='[order_date_dateorders]' derivation='Month-Trunc' name='[tmn:order_date_dateorders:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1010776642252447744]' derivation='User' name='[usr:Calculation_1010776642252447744:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.0x9or710sebycz125bpjl1acafwd].[none:customer_segment:nk]</column>
+            <column>[federated.0x9or710sebycz125bpjl1acafwd].[tmn:order_date_dateorders:qk]</column>
+            <column>[federated.0x9or710sebycz125bpjl1acafwd].[none:market:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='color' value='#1c2e4a' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0x9or710sebycz125bpjl1acafwd].[usr:Calculation_1010776642252447744:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontsize='48'>&lt;</run>
+                <run bold='true' fontsize='48'>[federated.0x9or710sebycz125bpjl1acafwd].[usr:Calculation_1010776642252447744:qk]</run>
+                <run bold='true' fontsize='48'>&gt;M</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{3588B19D-C1D0-46B0-B02B-B6E514DFC03F}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#f5f5f5' fontname='quote-cjk-patch' fontsize='20'>Supply Chain Performance Dashboard</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size maxheight='800' maxwidth='1200' minheight='800' minwidth='1200' sizing-mode='fixed' />
+      <datasources>
+        <datasource caption='supply_chain_analysis_cleaned' name='federated.0x9or710sebycz125bpjl1acafwd' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0x9or710sebycz125bpjl1acafwd'>
+        <column caption='Customer Segment' datatype='string' name='[customer_segment]' role='dimension' type='nominal' />
+        <column caption='Market' datatype='string' name='[market]' role='dimension' type='nominal' />
+        <column-instance column='[customer_segment]' derivation='None' name='[none:customer_segment:nk]' pivot='key' type='nominal' />
+        <column-instance column='[market]' derivation='None' name='[none:market:nk]' pivot='key' type='nominal' />
+        <column caption='Order Date Dateorders' datatype='datetime' name='[order_date_dateorders]' role='dimension' type='ordinal' />
+        <column-instance column='[order_date_dateorders]' derivation='Month-Trunc' name='[tmn:order_date_dateorders:qk]' pivot='key' type='quantitative' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='13' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='16' param='vert' type-v2='layout-flow' w='98666' x='667' y='1000'>
+            <zone fixed-size='49' h='6625' id='17' is-fixed='true' type-v2='title' w='98666' x='667' y='1000'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='2' />
+                <format attr='background-color' value='#1c2e4a' />
+              </zone-style>
+            </zone>
+            <zone h='91375' id='14' type-v2='layout-basic' w='98666' x='667' y='7625' />
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='17875' id='1' name='On-Time Delivery Rate' w='20917' x='37333' y='8250'>
+          <zone-style>
+            <format attr='border-color' value='#e6e6e6' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+            <format attr='padding' value='5' />
+          </zone-style>
+        </zone>
+        <zone h='17875' id='2' name='Total Sales' w='21167' x='15250' y='8250'>
+          <zone-style>
+            <format attr='border-color' value='#e6e6e6' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+            <format attr='margin' value='0' />
+            <format attr='padding' value='5' />
+          </zone-style>
+        </zone>
+        <zone h='24500' id='3' name='Monthly Sales Growth Trend' w='39917' x='59167' y='8250'>
+          <zone-style>
+            <format attr='border-color' value='#e6e6e6' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+            <format attr='padding' value='5' />
+          </zone-style>
+        </zone>
+        <zone h='23875' id='4' name='Average Delivery Delay by Shipping Mode' w='42917' x='15250' y='27125'>
+          <zone-style>
+            <format attr='border-color' value='#e6e6e6' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+            <format attr='padding' value='5' />
+          </zone-style>
+        </zone>
+        <zone h='21625' id='5' name='Sales by Customer Segment' w='42917' x='15250' y='52000'>
+          <zone-style>
+            <format attr='border-color' value='#e6e6e6' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+            <format attr='padding' value='5' />
+          </zone-style>
+        </zone>
+        <zone h='9125' id='7' name='Monthly Sales Growth Trend' param='[federated.0x9or710sebycz125bpjl1acafwd].[tmn:order_date_dateorders:qk]' type-v2='filter' values='database' w='13583' x='833' y='8125'>
+          <zone-style>
+            <format attr='border-color' value='#e6e6e6' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+            <format attr='padding' value='5' />
+          </zone-style>
+        </zone>
+        <zone h='13625' id='8' name='Sales by Customer Segment' param='[federated.0x9or710sebycz125bpjl1acafwd].[none:customer_segment:nk]' type-v2='filter' values='database' w='13417' x='917' y='18250'>
+          <zone-style>
+            <format attr='border-color' value='#e6e6e6' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+            <format attr='padding' value='5' />
+          </zone-style>
+        </zone>
+        <zone h='29000' id='9' name='Order Status Distribution' w='24917' x='73917' y='69125'>
+          <zone-style>
+            <format attr='border-color' value='#e6e6e6' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+            <format attr='padding' value='5' />
+          </zone-style>
+        </zone>
+        <zone h='23500' id='10' name='Product Category Performance: Sales vs Profit' w='57833' x='15250' y='74750'>
+          <zone-style>
+            <format attr='border-color' value='#e6e6e6' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+            <format attr='padding' value='5' />
+          </zone-style>
+        </zone>
+        <zone h='34125' id='11' name='Regional Sales by Country' w='39833' x='59167' y='34000'>
+          <zone-style>
+            <format attr='border-color' value='#e6e6e6' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+            <format attr='padding' value='5' />
+          </zone-style>
+        </zone>
+        <zone h='18500' id='12' name='Regional Sales by Country' param='[federated.0x9or710sebycz125bpjl1acafwd].[none:market:nk]' type-v2='filter' values='database' w='13250' x='917' y='32875'>
+          <zone-style>
+            <format attr='border-color' value='#e6e6e6' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+            <format attr='padding' value='5' />
+          </zone-style>
+        </zone>
+      </zones>
+      <simple-id uuid='{05812EFD-0B24-4858-A285-B5A82F6928A3}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='On-Time Delivery Rate'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{8A5BB92A-A2BA-4750-9649-2CAEED144347}' />
+    </window>
+    <window class='worksheet' name='Average Delivery Delay by Shipping Mode'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{5EF07FC6-6B64-4B5F-8C9C-0D90CAD989A7}' />
+    </window>
+    <window class='worksheet' name='Total Sales'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{B7115972-BBF3-4FC9-B0FA-6F49A505B634}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sales by Customer Segment'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{5D7626C7-7AA6-4B49-8CC0-2C2D7DF92F2E}' />
+    </window>
+    <window class='worksheet' name='Order Status Distribution'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0x9or710sebycz125bpjl1acafwd].[none:order_status:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{65968034-C4F3-426A-AAAE-5A8D366BA76F}' />
+    </window>
+    <window class='worksheet' name='Average Sales per Customer Segment'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{25145F0F-93AC-447F-AA56-3BC8B9285FB6}' />
+    </window>
+    <window class='worksheet' name='Regional Sales by Country'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0x9or710sebycz125bpjl1acafwd].[sum:sales:qk]' type='size' />
+            <card pane-specification-id='0' param='[federated.0x9or710sebycz125bpjl1acafwd].[none:market:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{A039DC62-8EA7-465D-9890-2118CBD6FF88}' />
+    </window>
+    <window class='worksheet' name='Product Category Performance: Sales vs Profit'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0x9or710sebycz125bpjl1acafwd].[none:category_name:nk]' type='color' />
+            <card pane-specification-id='0' param='[federated.0x9or710sebycz125bpjl1acafwd].[sum:sales:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{F2623BB9-27F1-491C-9E9A-25C123320B5E}' />
+    </window>
+    <window class='worksheet' name='Shipping Mode Performance'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.0x9or710sebycz125bpjl1acafwd].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{8D8BB513-5B43-4059-B183-44AAB5360B34}' />
+    </window>
+    <window class='worksheet' name='Monthly Sales Growth Trend'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{B71CD8FE-07A0-47A1-8C07-22CE5A5E1EE4}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Average Delivery Delay by Shipping Mode' />
+        <viewpoint name='Monthly Sales Growth Trend'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='On-Time Delivery Rate' />
+        <viewpoint name='Order Status Distribution' />
+        <viewpoint name='Product Category Performance: Sales vs Profit'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Regional Sales by Country'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sales by Customer Segment' />
+        <viewpoint name='Total Sales' />
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{7AEBCAE7-E1A1-4AF4-BB40-A6009EE20783}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='139' name='Average Delivery Delay by Shipping Mode' width='192'>
+      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
+      aRIAoWkSAKFpEgChaRIAoWnyVQhX1nCUnHVr2HqkCcUYxrT5c4nz6/huEmrldt5amc3OShVD
+      wERmL3yI0X1187we1GmpKWHHV7nkF5wl4ulnL2Mx9J/JKlxUk3X3Gy9Y1+afsTZbz1trD22y
+      vrRks/VfHe572rrlpZesmw7VWs9bm61n8tdan1n7jbXpqqtzt3XDf623fnGg2np8yxvWLad7
+      vzqZArkq824KKicyI9aEDgWvUQkkBu3h22Md7HvsH+walkjCKC8UdJhiZzCpfhe7+2I1+p7U
+      SQTJS3/D3SHe9NUtVSUArurHHyEokNYbSCjcHOJDZXUHt2KsrWHQLwJpnXQMImTMtVRVX2V1
+      OoEEwFU1n2OAwdBmk6IolJVXXLLruXPnMBja3mtigFLOmfJerdCmB3U6gwTAVbm581NTU5tN
+      qqriYxpyya7u7u40NbWd7/ykmrjRdMmujteDOp1BAuCqbrgBjpTQOotROVRchnFQB5+uXO9N
+      9fcltE46qinef57BfXEDrp7U6QQSAFelH0us8SveLyjHgkrd4Rw2HwknakQH+464jXHHN5Nz
+      uA4VC+UF75PnOY6xfXEHrp7U6QTybVBX1ubz9WiSFrbetr0sdzkZzGaJ/YP0NtcBgibz2ycS
+      6LNFdC63zrJcli/dzKl2T/dPXNbycziaBEBomkyBhKZJAISmSQCEpkkAhKZJAISmSQCEpkkA
+      hKZJAISmSQCEpkkAhKZJAISmSQCEpkkAhKZJAISmSQCEpkkAhKZJAISmSQCEpkkAhKZJAISm
+      SQCEpkkAhKZJAISmSQCEpkkAhKZJAISmSQCEpkkAhKZJAISmSQCEpv0/4WmPiasnHQkAAAAA
+      SUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='92' name='On-Time Delivery Rate' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='119' name='Sales by Customer Segment' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAAB3CAYAAABVE0/KAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAM10lEQVR4nO3df1AUZ57H8XfshQxyoiMjgqhRIitoSYaFYMyR6CWGLP4oXVM5lZINhkSI
+      uEfc03JPjRbUumfOuii7GMEsJ8Y6f1xMDi7GCZTZSOTiSjQQXcWNRryAYUQQ0cDMzVyb+2Mm
+      gEaMmjAMPN/XX1R30/3Q1R+ep398u+/75ptvvkEIRfXr6QYI0ZMkAEJpEgChNAmAUJoEQChN
+      AiCUJgEQSpMAdLO2traeboK4DQmAUJoEQCjtJz3dABWMeGh6TzdBdEF6AKE0CYBQmseHQK1n
+      LRRuL+Fkgw1twCjiFqSTbDZ6uhlCAJ4OgLWUnDdqePzl9aSHGLjeWseRvzQCEgDRMzwYAJ1T
+      B44Skb6C+BANAM1/OPETPdcCIW7mwQBc5FxTBNGjtVvPbj2LpXAb+4834vA1ETVtISmJY/AH
+      rJatlOgDaTpymLMNNjRTPKkrkzH7Q+upPWzcWkatTcd3wCh+/g//xPSRYLVk817IGlLN7vVX
+      FZBdP501icFgtZC7txnDlQo+rbWhmSaTNH8oJ4ve5dNaB77hc/jNsqkEA3rjMXbm7eBwrQ1t
+      wFimpqcxa4w/UEVBAaQkXiFv89scD0slv31jorfwYAAauNjiR+wt59mp2v0mNQ8tYUN6CD7O
+      eg7/2xZ2V60k1WwArlJ3dRzzf72BMCPUFv8zpWfAbL7Ef+9vZmr2H3gkQMPZWkez485aY7cH
+      8ORL61kY6MPFfevYfGQkqRkbeMEIJ7bnUGmdSmLwZQ6+f47YjA0kG33Q7efZl1vM6WVJRAB8
+      fYwd/64Rl/kaGUE+P9aOEh7kwQAEMXTgOWy3nHeGqgtxzE4NwQCghRA/O44/lZ4B8wTAyM+e
+      iCfMfaow4oFQ9+8NISrqMuuz/4VjEyKJnPgoj0XcWWuM42OJDDQAMGx4KGHDO9Y/JMhIHUDL
+      cSoPHeA/Dh3o9Juh+FohIhhoCSD+H59ljP/d7AfhTTwYgKGEBZ6mskZndFfDoHsQnLCSDQ+f
+      o/qL85wryeW3f32BrFkjf5yVOxw4Yhbx+qIYbtni0HA5+Hs5D94H0Bg3NZbTefmU19vRAWdr
+      HeVHzgDhmEMrKCqvx66Dbq+nvKiCUHP496yzhZq/nOOq3wNExT7B9PmPEtDc4tqa9hO+brmK
+      jo69qRrLweq7b/KQCMZ/+Q67qppxAuh2mqqPcbrl7lclvJNnL4MGJ5D5ok5h7nJ2NDrwdd8H
+      iMeAed4vqS/MZfmOTifBZsP3rPB++MrCpj+epMGm42uKI2npUwAM+dtpDP7dKhbv1PEb8TNm
+      jh1xDw0eyYzFT5G3JYvMLTZ03wGMemgG8xbcw6qEV7pPXovSvdra2hg76dmebobogjwKIZQm
+      ARBKkyFQN2tra6N///493QzRBekBhNIkAEJpEgChNAmAUJrUBHuA1AR7L+kBhNIkAEJpHh4C
+      tXLWUsj2kpM02DQGjIpjQXoyUhIseopHA2AtzeGNmsd5eX06IYbrtNYdwdtLgq2WAiqjU0kM
+      7umWiO7guQDopzhwNIL0FfG4SoI1/IfHIyXBoid5LgAXz9EUEU3XJcEWCrft53ijA19TFNMW
+      ppDYZe1tMJbcvVy8r55j7hriuKSlpEwyoXFjHS9+I5iUnE5SjAkNK5aCSqLnPUDZxq2UXX+a
+      NWsScRx4jTf2naXBpqP5jWDyoqXMHXcNS/Zaii4ARRUUAcS95Kr77VS/rPsFETM3s33bonfx
+      jsugJwr51/9JYM26xPZJX+3LptC2hpQJwIUz1Ax8lox1U9xzreD3ID9PXUKKe4r9cC6FVUtI
+      DS3l1f8MZMXqTSS75+nHtvJq6S9YmQA0f8FZWwJzV29irnt+67AwjAO+pMlmQ7fV8qec3YzN
+      TyVxTT7R3xkCnWbn6o2UffvSZ1sDFYWrwC8fqYnvfTwXgKFhBJ6upEYf3WUv0KU7KD1sa2sF
+      vztYl/FBxpg6N+AEbxU5Sfz1BiKNPoAVS/Z7t1mBE4dxJms3zmDYHWxOeDfPXQbVxjE19jR5
+      +eXU23XASWtdOa6KSDOhFUXuUkkde305RRWh3LYiUrdhd9UpYj//AW+WmYiJAIZEEd1YQnG1
+      q4zR2VxNcUkj0VFDuliPA4d/IMF/4wPOVuo++5iTzZ0XuMgXZ6+6SjidTiCcSNNBdpaex67j
+      /js+oerLH7yHRA/w6BAoOCGTF/VCcpfvoNHh674MGg8GM/N+Wd9RKuk+B7htRWTjR+QuP8A1
+      G/gFjWfmokXu5YNJWPQ0O/OyyOx0DjCrq6s4mpkZkRvJytyDTTMRNS2B4QM7EhAc/Rj3/WEV
+      i3fo+E3OYFPSeCY+9zznf5/L8rev4dD8CBoziWcWPvwj7inhKb20HsB9MpuaiLdfnZSSSO8m
+      d4KF0nppD9B7SA/g3SQA3UxKIr2bDIGE0iQAQmkSAKE0CYBQmnc8C9THSUmk95IeQChNAiCU
+      du8BsFoosFhvmlhFQbaFm6d6hpPa8j/y25cXk5a2mJdf2cwHtc4bltC/OsjmVb8iLS2NgirX
+      tNZTe8j6VRppaQVUeb7Roof1mXOA1sP55B59kJS1zxFp7If9/EHycnPQVixjymDXMqdKPyTo
+      uQ28/lODu3ilhpK9LUxb9zoPB7imVBWkcSxGnu1XRR8ZAln56MN+zElPdD/Tr2EY9STp8418
+      fKjjOWVdH0l4+8EP0EIzIxgR0DHFnCoHv0q6tQe4bWli7l6aDVeo+LQWm2ZictJ8hp4s4t1P
+      a3H4hjPnN8uYGgzfvkli2/7jNOp+BMXMJTNlEjfUtNhr+MI0kYSbHp82TDBjOnCOFi6zN20L
+      FQAVFQDEzZ7NhaIiLgAVaUVAHC/lpxJ8QwVYK6f2bGRrWS02/AiKXcCy52MZKCWRfcYPCsCF
+      orWkFd00MXQ2rot+Vkq3luD/zFpyIo3QXM27W7ZSGrrSdXDZ7QQ8+RLrFwbic3Ef6zYfYWRq
+      Bhtc3yklp9LK1MRg9FPvU9Z/Dq9sysCgOWn+8zZ2HRrH4ikDO7Z55QqXtZDvHoCahtZmw8YU
+      UvPziSkogNRU2v/BJ4ZQkF3P9DUdj1V3Pn+5fPAN3tJnsDbHjLGfnaaGr7kfnVPvl9F/zits
+      yjCgOZv587ZdHBq3mM5NEr3DDwpA6Ows14en21VRkF3v+vHScSpNT7Mi0ug6MI2RzHr6EK8e
+      v+QKgHE8sZGBrs+iDhtOaNhw4ju+U4qxzvXjmapyKspKqdjZaTNxcTCl0zhl0CAG6zo63BgC
+      XUfv73dHlZLfdYmjH/dnxgozRg3AQGCIAThNVXkFZaUV3K5Jonfw+pNgp8PIzLUbmXG7AlzD
+      aB5sfIej9hgmdhoG2U9U0Rj+FPf2j9kXX99btkhqgvuQ7jsJvtva3C6ER5o4uLOU864CXJyt
+      dXzynQLcYB7/u+u8k2ehutnJt3XCebuaefSxe/1m8ECiYts4UFyNa5V2muobsUtNcJ/SjT3A
+      XdbmdsEw8TmeP/97cpe/zTWHhl/QGCY9s5CbK3D9J6WxRN/O9qxMar+tE16S2X4J9F4MnvIi
+      M/dsJCvzxpNgqQnuO6QgpptJRZh36yP3AYS4NxIAoTQZAnUzqQn2btIDCKV5/X2AvqCtre37
+      FxI9QgLgATIE8l4yBBJKkwAIpUkAhNIkAEJpch9AKE16AKE0CYBQmgRAKE0C4HFWLBZ5A5G3
+      kAAIpclVII/RaTy2k7wdh6m16fgOGEXcgnSSze4XAbSepXhLLiVnbGimKJ7JSGfKMHnRSneT
+      Z4E85fJBCkuMLFi/muoPG5j6SACHPm8EjICdqt1vcuGRleQsC8T2eTG5+fsIy5rFvVY0izsj
+      QyBPuVCLIzqWUQbXLvcxhvHERPeXwO2VlDdOZl58ED5oBPx0FrPDP+NoTQ+2VxESAE8Jj2FY
+      xW6KP6vHpt8078oVCA+jo35fY2xkMI2Xb15Q/NgkAJ5imEDy0l8QePw9PtpfwKrXijhx1X2A
+      O/6Xfn43vr5L0zSsDZd6oKFqkXMAD9ICHiA++QWumWp5ZFQj2zfuwWd1EhG+93PdZrthWV3X
+      CQ66u3coibsnPUCP8MEYmcjfx3xNzSVg0CA4c47L7fN1/lptxTRYrgJ1NwmAp5z4L/I/qKbJ
+      fh0AZ/MnWA79H4MHAYZo4k1l7C5vwInO1c+LKTrzELGje7bJKpD7AJ7SepYPdr2F5bPzXHOA
+      rymKaQtTSBzj3z6/4z5AHElLU5hkkh6gu0kAPM6KxWIlMVFeJe0NZAgklCY9gFCa9ABCaRIA
+      oTQJgFCaBEAoTQIglCYBEEqTAAilSQCE0iQAQmkSAKE0CYBQmgRAKE0CIJQmARBKkwAIpUkA
+      hNIkAEJpEgChNAmAUJoEQChNAiCUJgEQSpMACKVJAITSJABCaRIAoTQJgFCaBEAo7f8B/t2o
+      xjIxZ1gAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='92' name='Total Sales' width='192'>
+      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
+      AABJRU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
